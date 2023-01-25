@@ -1,0 +1,11 @@
+USE laboratorio;
+CREATE TABLE EQUIPO (Equipo varchar(20) primary key);
+
+INSERT INTO EQUIPO VALUES ('ARGENTINA'), ('BRASIL'),('PARAGUAY'), ('CHILE'),
+						 ('URUGUAY'), ('COLOMBIA'), ('ECUADOR'), ('PERÚ'),
+						 ('BOLIVIA'), ('VENEZUELA');
+                         
+SELECT* FROM EQUIPO L CROSS JOIN EQUIPO V
+WHERE L.EQUIPO != V.EQUIPO
+ORDER BY L.EQUIPO;
+
